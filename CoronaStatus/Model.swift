@@ -45,3 +45,4 @@ struct CoutryData {
 }
 
 let testTotalData = TotalData(confirmed: 200, critical: 100, deaths: 20, recovered: 50)
+let testCoutryData = CoutryData(country: "Test", confirmed: 500, critical: 300, deaths: 200, recovered: 100, latitude: 0.0, longitude: 0.0)

@@ -12,7 +12,8 @@ import SwiftyJSON
 
 class CovidFetchRequest: ObservableObject {
     
-    @Published var totalData: TotalData = 
+    @Published var allCountries: [CoutryData] = []
+    @Published var totalData: TotalData = testTotalData
    
     init() {
         getCurrentTotal()
@@ -32,12 +33,14 @@ class CovidFetchRequest: ObservableObject {
             if result != nil {
                 let json = JSON(result!)
                
-                let confirmed = json[0]["recovered"].intValue
+                let confirmed = json[0]["confirmed"].intValue
                 let deaths = json[0]["deaths"].intValue
                 let recovered = json[0]["recovered"].intValue
                 let critical = json[0]["critical"].intValue
            
-                TotalData(confirmed: confirmed, critical: critical, deaths: deaths, recovered: recovered)
+                self.totalData = TotalData(confirmed: confirmed, critical: critical, deaths: deaths, recovered: recovered)
+            } else {
+                self.totalData = testTotalData
             }
         }
         
