@@ -9,13 +9,41 @@
 import SwiftUI
 
 struct TotalDataView: View {
+    
+    var totalData: TotalData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            HStack {
+                
+                TotalDataCard(number: totalData.confirmed.formatNumber(), name: "Confirmed")
+                
+                TotalDataCard(number: totalData.critical.formatNumber(), name: "Critical", color: .yellow)
+                
+                TotalDataCard(number: totalData.deaths.formatNumber(), name: "Deaths", color: .red)
+                
+            }// End of HStack
+            
+            HStack {
+                
+                TotalDataCard(number: String(format: "%.2f", totalData.fatalityRat), name: "Death", color: .red)
+                
+                TotalDataCard(number: totalData.recovered.formatNumber(), name: "Recovered", color: .green)
+                
+                TotalDataCard(number: String(format: "%.2f", totalData.fatalityRat), name: "Recovery%", color: .green)
+                
+            }// End of HStack
+        
+        }//End of VStack
+        .frame(height: 170)
+        .padding(10)
     }
 }
 
 struct TotalDataView_Previews: PreviewProvider {
     static var previews: some View {
-        TotalDataView()
+        TotalDataView(totalData: testTotalData)
     }
 }

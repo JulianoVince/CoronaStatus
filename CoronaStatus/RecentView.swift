@@ -19,6 +19,7 @@ struct RecentView: View {
 
             VStack {
                 
+                TotalDataView(totalData: covidFetch.totalData)
                 ListHeaderView()
                 
                 List {
@@ -30,7 +31,7 @@ struct RecentView: View {
                     }
                 }
             }//End of VStack
-            
+                .navigationBarTitle("Recent Data", displayMode: .inline)
         }//End of NavigationView
     }
 }
