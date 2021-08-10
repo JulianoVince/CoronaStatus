@@ -9,13 +9,47 @@
 import SwiftUI
 
 struct CountryDataRowView: View {
+    
+    var countryData: CountryData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            
+            Text("Country")
+                .fontWeight(.bold)
+                .font(.subheadline)
+                .frame(width: 110,alignment: .leading)
+                .padding(.leading, 15)
+            
+            Spacer()
+            
+            Text("Conf.")
+            .fontWeight(.bold)
+            .font(.subheadline)
+            .frame(width: 40)
+            .padding(.leading, 5)
+            
+            Spacer()
+            
+            Text("Death")
+            .fontWeight(.bold)
+            .font(.subheadline)
+            .frame(height: 40)
+            .padding(.leading, 5)
+            
+            Spacer()
+            
+            Text("Recover")
+            .fontWeight(.bold)
+            .font(.subheadline)
+            .frame(height: 40)
+            .padding(.trailing, 15)
+        }
     }
 }
 
 struct CountryDataRowView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryDataRowView()
+        CountryDataRowView(countryData: testCoutryData)
     }
 }
