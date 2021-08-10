@@ -17,6 +17,8 @@
 		4E02F85C26C1F331001D1F9D /* CovidFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F85B26C1F331001D1F9D /* CovidFetchRequest.swift */; };
 		4E02F85E26C1F904001D1F9D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F85D26C1F904001D1F9D /* Model.swift */; };
 		4E02F86126C2DB3A001D1F9D /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F86026C2DB3A001D1F9D /* RecentView.swift */; };
+		4E02F8A226C2F95F001D1F9D /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8A126C2F95F001D1F9D /* ListHeaderView.swift */; };
+		4E02F8A426C30E1F001D1F9D /* CountryDataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8A326C30E1F001D1F9D /* CountryDataRowView.swift */; };
 		DC3985FC2F7C21D0C74347D4 /* Pods_CoronaStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2804D92B6D68B08436D52AF5 /* Pods_CoronaStatus.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		4E02F85B26C1F331001D1F9D /* CovidFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidFetchRequest.swift; sourceTree = "<group>"; };
 		4E02F85D26C1F904001D1F9D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4E02F86026C2DB3A001D1F9D /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
+		4E02F8A126C2F95F001D1F9D /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		4E02F8A326C30E1F001D1F9D /* CountryDataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataRowView.swift; sourceTree = "<group>"; };
 		87B30017BBFB03684AC732C9 /* Pods-CoronaStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaStatus.debug.xcconfig"; path = "Target Support Files/Pods-CoronaStatus/Pods-CoronaStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		E0696C5905247EAFF4BFA7BC /* Pods-CoronaStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaStatus.release.xcconfig"; path = "Target Support Files/Pods-CoronaStatus/Pods-CoronaStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,8 @@
 				4E02F84626C1EEF5001D1F9D /* SceneDelegate.swift */,
 				4E02F84B26C1EEF5001D1F9D /* ContentView.swift */,
 				4E02F86026C2DB3A001D1F9D /* RecentView.swift */,
+				4E02F8A126C2F95F001D1F9D /* ListHeaderView.swift */,
+				4E02F8A326C30E1F001D1F9D /* CountryDataRowView.swift */,
 				4E02F85F26C2DAFC001D1F9D /* Model */,
 				4E02F84D26C1EEF7001D1F9D /* Assets.xcassets */,
 				4E02F85226C1EEF7001D1F9D /* LaunchScreen.storyboard */,
@@ -241,6 +247,8 @@
 				4E02F84C26C1EEF5001D1F9D /* ContentView.swift in Sources */,
 				4E02F86126C2DB3A001D1F9D /* RecentView.swift in Sources */,
 				4E02F84726C1EEF5001D1F9D /* SceneDelegate.swift in Sources */,
+				4E02F8A226C2F95F001D1F9D /* ListHeaderView.swift in Sources */,
+				4E02F8A426C30E1F001D1F9D /* CountryDataRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
