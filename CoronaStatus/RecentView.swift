@@ -12,6 +12,7 @@ struct RecentView: View {
     
     @ObservedObject var covidFetch = CovidFetchRequest()
     @State var searchText = ""
+    @State var isSearchVisible = false
     
     var body: some View {
         
@@ -32,6 +33,19 @@ struct RecentView: View {
                 }
             }//End of VStack
                 .navigationBarTitle("Recent Data", displayMode: .inline)
+                .navigationBarItems(trailing:
+                Button(action: {
+                    
+                    self.isSearchVisible.toggle()
+                    
+                    if !self.isSearchVisible {
+                        self.searchText = ""
+                    }
+                    
+                }, label: {
+                    Image(systemName: "magnifyingglass")
+                })
+            )
         }//End of NavigationView
     }
 }
