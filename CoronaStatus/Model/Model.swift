@@ -25,7 +25,7 @@ struct TotalData {
 }
 
 
-struct CoutryData {
+struct CountryData {
     
     let country:String
     let confirmed: Int64
@@ -44,5 +44,4 @@ struct CoutryData {
     }
 }
 
-let testTotalData = TotalData(confirmed: 200, critical: 100, deaths: 20, recovered: 50)
-let testCoutryData = CoutryData(country: "Test", confirmed: 500, critical: 300, deaths: 200, recovered: 100, latitude: 0.0, longitude: 0.0)
+let testTotalData = TotalData(confirmed: 3000, critical: 3000, deaths: 400, recovered: 400)
