@@ -23,7 +23,7 @@ struct ListHeaderView: View {
             Text("Conf.")
             .fontWeight(.bold)
             .font(.subheadline)
-            .frame(width: 40)
+            .frame(width: 90)
             .padding(.leading, 5)
             
             Spacer()

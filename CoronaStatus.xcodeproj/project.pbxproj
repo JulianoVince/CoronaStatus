@@ -81,9 +81,8 @@
 				4E02F84626C1EEF5001D1F9D /* SceneDelegate.swift */,
 				4E02F84B26C1EEF5001D1F9D /* ContentView.swift */,
 				4E02F86026C2DB3A001D1F9D /* RecentView.swift */,
-				4E02F8A126C2F95F001D1F9D /* ListHeaderView.swift */,
-				4E02F8A326C30E1F001D1F9D /* CountryDataRowView.swift */,
-				4E02F8A526C3131E001D1F9D /* Extension.swift */,
+				4E02F8A826C31D22001D1F9D /* Views */,
+				4E02F8A726C31D02001D1F9D /* Extensions */,
 				4E02F85F26C2DAFC001D1F9D /* Model */,
 				4E02F84D26C1EEF7001D1F9D /* Assets.xcassets */,
 				4E02F85226C1EEF7001D1F9D /* LaunchScreen.storyboard */,
@@ -109,6 +108,23 @@
 				4E02F85D26C1F904001D1F9D /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4E02F8A726C31D02001D1F9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E02F8A526C3131E001D1F9D /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E02F8A826C31D22001D1F9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E02F8A126C2F95F001D1F9D /* ListHeaderView.swift */,
+				4E02F8A326C30E1F001D1F9D /* CountryDataRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CC3D9DFCEEED6EC02896C8A3 /* Pods */ = {
