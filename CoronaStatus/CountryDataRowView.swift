@@ -15,35 +15,33 @@ struct CountryDataRowView: View {
     var body: some View {
         HStack {
             
-            Text("Country")
-                .fontWeight(.bold)
+            Text(countryData.country)
+                .fontWeight(.medium)
                 .font(.subheadline)
+                .lineLimit(2)
                 .frame(width: 110,alignment: .leading)
-                .padding(.leading, 15)
             
             Spacer()
             
-            Text("Conf.")
-            .fontWeight(.bold)
+            Text(countryData.confirmed.formatNumber())
             .font(.subheadline)
             .frame(width: 40)
             .padding(.leading, 5)
             
             Spacer()
             
-            Text("Death")
-            .fontWeight(.bold)
+            Text(countryData.deaths.formatNumber())
+            .frame(width: 50,height: 40, alignment: .center)
             .font(.subheadline)
-            .frame(height: 40)
+            .foregroundColor(.red)
             .padding(.leading, 5)
             
             Spacer()
             
-            Text("Recover")
-            .fontWeight(.bold)
+            Text(countryData.recovered.formatNumber())
+            .frame(width: 50,height: 40, alignment: .center)
             .font(.subheadline)
-            .frame(height: 40)
-            .padding(.trailing, 15)
+            .foregroundColor(.green)
         }
     }
 }
