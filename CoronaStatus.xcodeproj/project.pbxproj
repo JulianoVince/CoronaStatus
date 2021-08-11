@@ -27,6 +27,7 @@
 		4E02F8B226C33FDA001D1F9D /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B126C33FDA001D1F9D /* CountryDetailView.swift */; };
 		4E02F8B426C436CF001D1F9D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B326C436CF001D1F9D /* MapView.swift */; };
 		4E02F8B626C43E9F001D1F9D /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B526C43E9F001D1F9D /* MapContainerView.swift */; };
+		4E02F8B826C4576E001D1F9D /* CountryStatisticsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B726C4576E001D1F9D /* CountryStatisticsFetchRequest.swift */; };
 		DC3985FC2F7C21D0C74347D4 /* Pods_CoronaStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2804D92B6D68B08436D52AF5 /* Pods_CoronaStatus.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		4E02F8B126C33FDA001D1F9D /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		4E02F8B326C436CF001D1F9D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4E02F8B526C43E9F001D1F9D /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
+		4E02F8B726C4576E001D1F9D /* CountryStatisticsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatisticsFetchRequest.swift; sourceTree = "<group>"; };
 		87B30017BBFB03684AC732C9 /* Pods-CoronaStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaStatus.debug.xcconfig"; path = "Target Support Files/Pods-CoronaStatus/Pods-CoronaStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		E0696C5905247EAFF4BFA7BC /* Pods-CoronaStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaStatus.release.xcconfig"; path = "Target Support Files/Pods-CoronaStatus/Pods-CoronaStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 			children = (
 				4E02F85B26C1F331001D1F9D /* CovidFetchRequest.swift */,
 				4E02F85D26C1F904001D1F9D /* Model.swift */,
+				4E02F8B726C4576E001D1F9D /* CountryStatisticsFetchRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E02F8B826C4576E001D1F9D /* CountryStatisticsFetchRequest.swift in Sources */,
 				4E02F8B026C33E12001D1F9D /* CountryDetailRow.swift in Sources */,
 				4E02F8B426C436CF001D1F9D /* MapView.swift in Sources */,
 				4E02F85C26C1F331001D1F9D /* CovidFetchRequest.swift in Sources */,
