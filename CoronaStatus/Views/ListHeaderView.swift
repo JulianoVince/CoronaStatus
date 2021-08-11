@@ -15,7 +15,7 @@ struct ListHeaderView: View {
             Text("Country")
                 .fontWeight(.bold)
                 .font(.subheadline)
-                .frame(width: 95,alignment: .leading)
+                .frame(width: 110,alignment: .leading)
                 .padding(.leading, 15)
             
             Spacer()
@@ -23,7 +23,6 @@ struct ListHeaderView: View {
             Text("Conf.")
             .fontWeight(.bold)
             .font(.subheadline)
-            .frame(width: 85)
             .padding(.leading, 5)
             
             Spacer()
@@ -31,7 +30,7 @@ struct ListHeaderView: View {
             Text("Death")
             .fontWeight(.bold)
             .font(.subheadline)
-            .frame(width:80 ,height: 40)
+            .frame(width:50 ,height: 40)
             .padding(.leading, 5)
             
             Spacer()
@@ -39,7 +38,7 @@ struct ListHeaderView: View {
             Text("Recover")
             .fontWeight(.bold)
             .font(.subheadline)
-            .frame(width:80 ,height: 40)
+            .frame(width:60 ,height: 40)
             .padding(.trailing, 15)
         }
         .background(Color("cardBackgroundGray"))

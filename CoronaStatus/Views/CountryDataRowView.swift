@@ -19,29 +19,34 @@ struct CountryDataRowView: View {
                 .fontWeight(.medium)
                 .font(.subheadline)
                 .lineLimit(2)
-                .frame(width: 95,alignment: .leading)
+                .frame(width: 110,alignment: .leading)
             
             Spacer()
             
             Text(countryData.confirmed.formatNumber())
-            .font(.subheadline)
-            .frame(width: 85)
-            .padding(.leading, 5)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .font(.subheadline)
+                .padding(.leading, 5)
             
             Spacer()
             
             Text(countryData.deaths.formatNumber())
-            .frame(width: 80,height: 40, alignment: .center)
-            .font(.subheadline)
-            .foregroundColor(.red)
-            .padding(.leading, 5)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .frame(width: 50,height: 40, alignment: .center)
+                .font(.subheadline)
+                .foregroundColor(.red)
+                .padding(.leading, 5)
             
             Spacer()
             
             Text(countryData.recovered.formatNumber())
-            .frame(width: 80,height: 40, alignment: .center)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .frame(width: 50,height: 40, alignment: .center)
                 .font(.subheadline)
-            .foregroundColor(.green)
+                .foregroundColor(.green)
         }
     }
 }
