@@ -23,6 +23,10 @@
 		4E02F8AA26C31D9A001D1F9D /* TotalDataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8A926C31D9A001D1F9D /* TotalDataCard.swift */; };
 		4E02F8AC26C32B08001D1F9D /* TotalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8AB26C32B08001D1F9D /* TotalDataView.swift */; };
 		4E02F8AE26C33988001D1F9D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8AD26C33988001D1F9D /* SearchView.swift */; };
+		4E02F8B026C33E12001D1F9D /* CountryDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8AF26C33E12001D1F9D /* CountryDetailRow.swift */; };
+		4E02F8B226C33FDA001D1F9D /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B126C33FDA001D1F9D /* CountryDetailView.swift */; };
+		4E02F8B426C436CF001D1F9D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B326C436CF001D1F9D /* MapView.swift */; };
+		4E02F8B626C43E9F001D1F9D /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F8B526C43E9F001D1F9D /* MapContainerView.swift */; };
 		DC3985FC2F7C21D0C74347D4 /* Pods_CoronaStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2804D92B6D68B08436D52AF5 /* Pods_CoronaStatus.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,10 @@
 		4E02F8A926C31D9A001D1F9D /* TotalDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCard.swift; sourceTree = "<group>"; };
 		4E02F8AB26C32B08001D1F9D /* TotalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataView.swift; sourceTree = "<group>"; };
 		4E02F8AD26C33988001D1F9D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4E02F8AF26C33E12001D1F9D /* CountryDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRow.swift; sourceTree = "<group>"; };
+		4E02F8B126C33FDA001D1F9D /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		4E02F8B326C436CF001D1F9D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4E02F8B526C43E9F001D1F9D /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		87B30017BBFB03684AC732C9 /* Pods-CoronaStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaStatus.debug.xcconfig"; path = "Target Support Files/Pods-CoronaStatus/Pods-CoronaStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		E0696C5905247EAFF4BFA7BC /* Pods-CoronaStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaStatus.release.xcconfig"; path = "Target Support Files/Pods-CoronaStatus/Pods-CoronaStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +95,8 @@
 				4E02F84626C1EEF5001D1F9D /* SceneDelegate.swift */,
 				4E02F84B26C1EEF5001D1F9D /* ContentView.swift */,
 				4E02F86026C2DB3A001D1F9D /* RecentView.swift */,
+				4E02F8B126C33FDA001D1F9D /* CountryDetailView.swift */,
+				4E02F8B526C43E9F001D1F9D /* MapContainerView.swift */,
 				4E02F8A826C31D22001D1F9D /* Views */,
 				4E02F8A726C31D02001D1F9D /* Extensions */,
 				4E02F85F26C2DAFC001D1F9D /* Model */,
@@ -132,6 +142,8 @@
 				4E02F8A926C31D9A001D1F9D /* TotalDataCard.swift */,
 				4E02F8AB26C32B08001D1F9D /* TotalDataView.swift */,
 				4E02F8AD26C33988001D1F9D /* SearchView.swift */,
+				4E02F8AF26C33E12001D1F9D /* CountryDetailRow.swift */,
+				4E02F8B326C436CF001D1F9D /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E02F8B026C33E12001D1F9D /* CountryDetailRow.swift in Sources */,
+				4E02F8B426C436CF001D1F9D /* MapView.swift in Sources */,
 				4E02F85C26C1F331001D1F9D /* CovidFetchRequest.swift in Sources */,
 				4E02F85E26C1F904001D1F9D /* Model.swift in Sources */,
 				4E02F84526C1EEF5001D1F9D /* AppDelegate.swift in Sources */,
@@ -276,6 +290,8 @@
 				4E02F8A626C3131E001D1F9D /* Extension.swift in Sources */,
 				4E02F86126C2DB3A001D1F9D /* RecentView.swift in Sources */,
 				4E02F84726C1EEF5001D1F9D /* SceneDelegate.swift in Sources */,
+				4E02F8B226C33FDA001D1F9D /* CountryDetailView.swift in Sources */,
+				4E02F8B626C43E9F001D1F9D /* MapContainerView.swift in Sources */,
 				4E02F8AE26C33988001D1F9D /* SearchView.swift in Sources */,
 				4E02F8A226C2F95F001D1F9D /* ListHeaderView.swift in Sources */,
 				4E02F8AA26C31D9A001D1F9D /* TotalDataCard.swift in Sources */,

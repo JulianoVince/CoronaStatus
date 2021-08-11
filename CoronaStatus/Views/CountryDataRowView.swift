@@ -19,13 +19,13 @@ struct CountryDataRowView: View {
                 .fontWeight(.medium)
                 .font(.subheadline)
                 .lineLimit(2)
-                .frame(width: 110,alignment: .leading)
+                .frame(width: 95,alignment: .leading)
             
             Spacer()
             
             Text(countryData.confirmed.formatNumber())
             .font(.subheadline)
-            .frame(width: 90)
+            .frame(width: 85)
             .padding(.leading, 5)
             
             Spacer()
@@ -40,7 +40,7 @@ struct CountryDataRowView: View {
             
             Text(countryData.recovered.formatNumber())
             .frame(width: 80,height: 40, alignment: .center)
-            .font(.subheadline)
+                .font(.subheadline)
             .foregroundColor(.green)
         }
     }

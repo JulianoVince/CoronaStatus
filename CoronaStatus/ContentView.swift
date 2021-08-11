@@ -13,12 +13,18 @@ struct ContentView: View {
     var body: some View {
         
         TabView{
+            
             RecentView()
                 .tabItem {
                     Tab(imageName:"chart.bar", text: "Recent")
-            }
+            }.tag(0)
+            
+            MapContainerView()
+                .tabItem {
+                    Tab(imageName:"map", text: "Map")
+            }.tag(1)
+            
         }
-        .tag(0)
     }
 }
 
