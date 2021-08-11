@@ -19,11 +19,9 @@ class CountryStatisticsFetchRequest: ObservableObject {
         "x-rapidapi-host": "covid-193.p.rapidapi.com"
     ]
    
-    init() {
-        getCurrentTotal(country: "usa")
-    }
+    init() { }
     
-    func getCurrentTotal(country: String){
+    func getStatusFor(country: String){
     
         AF.request("https://covid-193.p.rapidapi.com/statistics?country=\(country)", headers: headers).responseJSON { response in
             

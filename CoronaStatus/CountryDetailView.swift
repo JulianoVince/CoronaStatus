@@ -10,19 +10,19 @@ import SwiftUI
 
 struct CountryDetailView: View {
     
-    var countryData: CountryData
+    @ObservedObject var countryStatisticsRequest = CountryStatisticsFetchRequest()
+    
+    var countryName: String
     
     var body: some View {
         VStack{
             VStack {
-                CountryDetailRow(number: countryData.confirmed.formatNumber(), name: "Confirmed")
+                CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.confirmedCases.formatNumber() ?? "Err", name: "Confirmed")
                     .padding(.top)
                 
-                CountryDetailRow(number: countryData.critical.formatNumber(), name: "Critical", color: .yellow)
-                CountryDetailRow(number: countryData.deaths.formatNumber(), name: "Deaths", color: .red)
-                CountryDetailRow(number: String(format: "%2.f", countryData.fatalityRat), name: "Death%", color: .red)
-                CountryDetailRow(number: countryData.recovered.formatNumber(), name: "Recovered", color: .green)
-                CountryDetailRow(number: String(format: "%2.f", countryData.recoveredRate), name: "Recovered%", color: .green)
+                CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.activeCase.formatNumber() ?? "Err", name: "Active Cases")
+                
+                CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.newCases.formatNumber() ?? "Err", name: "New Cases")
 
             }//End of VStack
             .background(Color("cardBackgroundGray"))
@@ -32,12 +32,13 @@ struct CountryDetailView: View {
             Spacer()
         }// End of VStack
             .padding(.top, 50)
-            .navigationBarTitle(countryData.country)
+            .navigationBarTitle(countryName)
+            .onAppear(){
+                self.getStatistics()
+        }
     }
-}
-
-struct CountryDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        CountryDetailView(countryData: testCoutryData)
+    
+    private func getStatistics(){
+        countryStatisticsRequest.getStatusFor(country: self.countryName)
     }
 }
