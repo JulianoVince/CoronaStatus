@@ -54,6 +54,6 @@ struct CountryDetailView: View {
     }
     
     private func getStatistics(){
-        countryStatisticsRequest.getStatusFor(country: self.countryName)
+        countryStatisticsRequest.getStatusFor(country: self.countryName.replacingOccurrences(of: " ", with: "-"))
     }
 }
